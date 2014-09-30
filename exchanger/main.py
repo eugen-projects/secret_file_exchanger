@@ -19,7 +19,6 @@ class DownloadSession(Session):
 
 class UploadSession(Session):
     def __init__(self):
-        self.sock = None
         self.logger = logging.getLogger("UPLOADER")
 
     def _get_file_sizes(self, filenames):
