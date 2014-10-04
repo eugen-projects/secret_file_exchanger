@@ -13,6 +13,6 @@ class TestUploaderUtilities(unittest.TestCase):
         self.assertRaises(TerminateProgram, self.uploader._get_file_sizes, ["somwhere/bla bla.txt"])
 
     def test_valid_file_size(self):
-        result = self.uploader._get_file_sizes(['test/test_send_file.py'])
+        result = self.uploader._get_file_sizes(['test/test_main.py'])
         for k, v in result.iteritems():
             self.assertGreaterEqual(v, 0)

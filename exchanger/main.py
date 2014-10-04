@@ -33,6 +33,7 @@ class UploadSession(Session):
             self.logger.error("%s: '%s'. Please check if file exists at that location.", ioe.strerror, os.path.abspath(ioe.filename))
             raise TerminateProgram()
 
+
 def upload(files=[], remote_ip_address=None, remote_port=None, **unused):
     print files, remote_ip_address, remote_port
 
