@@ -16,7 +16,7 @@ nosetests --with-doctest --with-coverage --cover-html  --cover-inclusive  --cove
 goto end
 
 : coverage
-start chrome cover/main.html
+start chrome cover/index.html
 goto end
 
 : clean
